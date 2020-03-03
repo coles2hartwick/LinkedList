@@ -58,7 +58,6 @@ class LinkedList:
             if current_node.data == search:
                 return True
             current_node = current_node.next
-
         return False
 
     def delete_node(self, key):
@@ -81,7 +80,7 @@ class LinkedList:
             temp = temp.next
 
         # if key was not present in linked list
-        if temp == None:
+        if temp is None:
             return
 
         # Unlink the node from linked list
